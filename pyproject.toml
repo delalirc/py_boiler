@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "py_boiler"
-version = "1.0.0"
+version = "1.0.1-beta"
 description = "A fast and flexible scaffolding tool for Python applications."
 readme = "README.md"
 authors = [{ name = "Delali Funani", email = "dfunani@gmail.com" }]
@@ -30,7 +30,7 @@ Issues = "https://github.com/dfunani/py_boiler/issues"
 
 
 [tool.bumpver]
-current_version = "0.1.0-alpha"
+current_version = "1.0.1-beta"
 version_pattern = "MAJOR.MINOR.PATCH[-TAG]"
 commit_message = "bump version {old_version} -> {new_version}"
 tag_message = "{new_version}"

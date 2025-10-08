@@ -158,3 +158,24 @@ Distributed under the **Apache 2.0 License**. See `LICENSE` for more information
 Delali Funani – [dfunani@gmail.com](mailto:dfunani@gmail.com)
 
 Project Link: [https://github.com/dfunani/py_boiler](https://github.com/dfunani/py_boiler)
+
+## Notes - PYPI
+
+To upload your package to PyPI, follow these steps:
+
+Ensure your package is ready for distribution (source code, metadata, etc.).
+
+Install Twine and Build if not already installed:
+
+`pip install twine build`
+
+Build your package:
+
+`python -m build`
+
+Upload to PyPI:
+
+`twine upload --repository pypi dist/*`
+
+After uploading, you can install your package from PyPI using:
+`pip install --index-url https://test.pypi.org/simple/ your-package-name`
