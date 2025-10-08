@@ -18,7 +18,7 @@ classifiers = [
     "Programming Language :: Python :: 3",
 ]
 
-dependencies = []
+dependencies = ["click"]
 
 [project.optional-dependencies]
 dev = ["mypy", "ruff", "pytest", "bumpver", "twine", "build"]
