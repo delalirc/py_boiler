@@ -54,6 +54,6 @@ push = true
 ]
 
 [project.scripts]
-py-boiler-tools = "py_boiler.app:main"
+pyboiler = "py_boiler.app:main"
 
 
