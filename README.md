@@ -37,7 +37,7 @@ Stop wasting time setting up the same boilerplate code for every project. **py\_
 
 ## 🏗️ Built With
 
-* [Python 3.8+](https://www.python.org/)
+* [Python 3.10+](https://www.python.org/)
 * [uv](https://github.com/astral-sh/uv) for dependency management and reproducible environments
 * [bumpver](https://pypi.org/project/bumpver/) for automated semantic versioning
 
