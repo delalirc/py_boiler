@@ -1,6 +1,6 @@
 import click
 from pathlib import Path
-from templates import README_CODE, MAIN_CODE, GITIGNORE_CODE
+from py_boiler.templates import README_CODE, MAIN_CODE, GITIGNORE_CODE
 
 @click.group()
 def main():
@@ -18,7 +18,7 @@ def new():
 def basic():
     """Generate a Hello World app.py file."""
     target_files = [
-        "README1.md", "app1.py", ".gitignore1", "__init__1.py"
+        "README.md", "app.py", ".gitignore", "__init__.py"
     ]
     for file in target_files:
         target_file = Path(f"./{file}")
@@ -28,11 +28,11 @@ def basic():
             continue
 
         match file:
-            case "README1.md":
+            case "README.md":
                 app_code = README_CODE
-            case "app1.py":
+            case "app.py":
                 app_code = MAIN_CODE
-            case ".gitignore1":
+            case ".gitignore":
                 app_code = GITIGNORE_CODE
             case _:
                 app_code = ""
